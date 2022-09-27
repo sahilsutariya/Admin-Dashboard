@@ -1,6 +1,7 @@
 import React from "react";
 import Dropdown from "../DropDown/Dropdown";
 import "../Topnav/topnav.css";
+import "../DropDown/dropdown.css";
 import notifications from "../../assets/JsonData/notification.json";
 import { Link } from "react-router-dom";
 import usericon from "../../assets/images/usericon.jpg";
@@ -41,16 +42,26 @@ const Topnav = ({ userName, onLogout }) => {
       </div>
       <div className="topnav__right">
         <div className="topnav__right-item">
-          <Dropdown
-            customToggle={() =>
-              renderUserToggle({
-                display_name: userName,
-                image: usericon,
-              })
-            }
-            contentData={user_menu}
-            renderItems={(item, index) => renderUserMenu(item, index, onLogout)}
-          />
+          <div className="dropdown">
+            <Dropdown
+              customToggle={() =>
+                renderUserToggle({
+                  display_name: userName,
+                  image: usericon,
+                })
+              }
+              contentData={user_menu}
+              renderItems={(item, index) =>
+                renderUserMenu(item, index, onLogout)
+              }
+            />
+            <div className="dropdown-content">
+              <div className="notification-item" onClick={onLogout}>
+                <i className="bx bx-log-out-circle bx-rotate-180"></i>
+                <span className="text">Logout</span>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="topnav__right-item">
           <Dropdown
