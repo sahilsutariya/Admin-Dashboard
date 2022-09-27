@@ -1,0 +1,21 @@
+[{
+        "icon": "bx bx-error",
+        "content": "Some Id Error in your packages"
+    },
+    {
+        "icon": "bx bx-package",
+        "content": "Please Install Every Package of Our Dashboard"
+    },
+    {
+        "icon": "bx bx-cart",
+        "content": "Your cart are still in progress...!"
+    },
+    {
+        "icon": "bx bx-error",
+        "content": "Error in some users data to update."
+    },
+    {
+        "icon": "bx bx-cart",
+        "content": "Please update your cart before disable"
+    }
+]
