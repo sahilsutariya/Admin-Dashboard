@@ -3,7 +3,7 @@ import Dropdown from "../DropDown/Dropdown";
 import "../Topnav/topnav.css";
 import notifications from "../../assets/JsonData/notification.json";
 import { Link } from "react-router-dom";
-import usericon from "../../assets/images/usericon.png";
+import usericon from "../../assets/images/usericon.jpg";
 import user_menu from "../../assets/JsonData/user_menus.json";
 import ThemeMenu from "../ThemeMenu/ThemeMenu";
 
