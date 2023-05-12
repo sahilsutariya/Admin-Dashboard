@@ -1,4 +1,4 @@
-# Admin DashBoard
+# Admin DashBoard React JS
 
 ## Available Scripts
 
